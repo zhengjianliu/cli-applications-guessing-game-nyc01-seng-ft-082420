@@ -2,6 +2,6 @@
 require 'pry'
 def run_guessing_game
   num = rand(6)+1
-  inputs = gets.chomp
+  input = gets.chomp
   if num == input
 end
