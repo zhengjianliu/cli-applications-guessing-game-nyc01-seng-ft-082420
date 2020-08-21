@@ -9,7 +9,10 @@ def run_guessing_game
   elsif input == "exit"
     puts "Goodbye!"
   else
-    puts ""
-    
-    binding.pry
+    puts "Sorry! The computer guessed #{num}."
+    num = rand(6)+1
+    prompt = "Please guess a number between 1 and 6."
+    input = gets.chomp
+  end
+  binding.pry
 end
